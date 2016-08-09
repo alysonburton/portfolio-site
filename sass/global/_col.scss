@@ -1,36 +1,66 @@
-//----- Extends
-%clearfix:after {
-    display:block;
-    clear:both;
-    content:'';
-}
- 
-//----- Grid System
-$grid-spacing:3%;
- 
-.row {
-    @extend %clearfix;
- 
-    & + & {
-        margin-top:$grid-spacing;
+  // Number of total columns in grid
+    $columns: 12;
+    
+    // Space between columns
+    $gutter: 10px;
+    
+    // Width of grid container
+    $container-widths: (
+      small: 544px,
+      medium: 720px,
+      large: 960px
+    );
+    
+    // Width of browser before a grid resize is triggered
+    $browser-breakpoints: (
+      small: 768px,
+      medium: 992px,
+      large: 1200px
+    );
+    
+    .container{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      
+      // Creates a media query for each browser breakpoint
+      @each $name, $breakpoint in $browser-breakpoints {
+        @media (min-width: $breakpoint) {
+          width: map-get($container-widths, $name)
+        }
+      }
     }
-}
- 
-[class^="col-"] {
-    float:left;
-    margin-right:$grid-spacing;
-    -webkit-box-sizing:border-box; 
-    -moz-box-sizing:border-box; 
-    box-sizing:border-box;
- 
-    &:last-child {
-        margin-right:0%;
+    
+    .row{
+      @include clearfix();
+      margin-left: auto;
+      margin-right: auto;
     }
-}
- 
-
- 
-//----- Columns (Automatic)
-.col-1   { width:(100% / 3) - ($grid-spacing * 1 / 3); }
-.col-2   { width:(100% / 3) - ($grid-spacing * 2 / 3; }
-.col-3   { width:(100% / 3) - ($grid-spacing * 3 / 3); }
+    
+    .col {
+      position: relative;
+      min-height: 1px;
+      
+      // Adds even padding to both sides of a column
+      padding-left: ($gutter / 2);
+      padding-right: ($gutter / 2);
+    }
+    
+    // Builds grid columns for each browser breakpoint
+    @each $name, $breakpoint in $browser-breakpoints {
+        @media (min-width: $breakpoint) {
+        
+            // Loop through each column
+            @for $i from 1 through $columns {
+            
+                //Creates: .small-1, .medium-1, .large-1
+                .#{$name}-#{$i} {
+                    float: left;
+                    width: percentage($i/$columns);
+                }
+                
+            }
+        
+        }
+    }
+   
