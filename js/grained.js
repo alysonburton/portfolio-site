@@ -60,8 +60,6 @@ var options = {
 grained("#container", options);
 
 
-background-color :rgb(204, 204, 204)
-
         Object.keys(opt).forEach(function (key) {
             options[key] = opt[key];
         });
