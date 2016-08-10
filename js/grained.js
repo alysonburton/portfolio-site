@@ -43,8 +43,8 @@
             grainDensity: 10,
             grainWidth: 1,
             grainHeight: 1,
-            // grainChaos: 0.5,
-            // grainSpeed: 20
+            grainChaos: 0.5,
+            grainSpeed: 20
 
         };
 
