@@ -57,7 +57,7 @@ var options = {
   "grainWidth": 1,
   "grainHeight": 1
 }
-grained("#elementId", options);
+grained("#container", options);
 
 
 background-color :rgb(204, 204, 204)
