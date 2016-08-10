@@ -35,18 +35,32 @@
         var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
 
         //default option values
-        var options = {
-            animate: true,
-            patternWidth: 81.98,
-            patternHeight: 65.37,
-            grainOpacity: 0.2,
-            grainDensity: 10,
-            grainWidth: 1,
-            grainHeight: 1,
-            grainChaos: 0.5,
-            grainSpeed: 20
+        // var options = {
+        //     animate: true,
+        //     patternWidth: 81.98,
+        //     patternHeight: 65.37,
+        //     grainOpacity: 0.2,
+        //     grainDensity: 10,
+        //     grainWidth: 1,
+        //     grainHeight: 1,
+        //     grainChaos: 0.5,
+        //     grainSpeed: 20
 
-        };
+        // };
+
+var options = {
+  "animate": true,
+  "patternWidth": 81.98,
+  "patternHeight": 65.37,
+  "grainOpacity": 0.2,
+  "grainDensity": 1,
+  "grainWidth": 1,
+  "grainHeight": 1
+}
+grained("#elementId", options);
+
+
+background-color :rgb(204, 204, 204)
 
         Object.keys(opt).forEach(function (key) {
             options[key] = opt[key];
