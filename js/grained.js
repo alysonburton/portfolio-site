@@ -4,7 +4,6 @@
 * GitHub : https://github.com/sarathsaleem/grained
 * v0.0.1
 */
-
 (function (window, doc) {
 
     "use strict";
@@ -34,7 +33,7 @@
 
         var prefixes = ["", "-moz-", "-o-animation-", "-webkit-", "-ms-"];
 
-        //default option values
+        default option values
         var options = {
             animate: true,
             patternWidth: 81.98,

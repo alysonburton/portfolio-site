@@ -267,15 +267,13 @@ a {
 
 #container {
   width: 100%;
-  height: 100%; }
+  height: 500px;
+  background-color: #9c9c9c; }
 
 #wordChanger {
   color: #f35537; }
 
 #info {
   top: 50%; }
-
-body {
-  background-color: #9c9c9c; }
 
 /*# sourceMappingURL=style.css.map */
