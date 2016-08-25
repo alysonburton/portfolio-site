@@ -268,7 +268,8 @@ a {
 
 #logo {
   width: 30%;
-  padding: 30px; }
+  padding: 30px;
+  font-family: "Work Sans", sans-serif; }
 
 #container {
   width: 100%;
@@ -279,10 +280,10 @@ a {
   right: 0;
   left: 0;
   overflow: hidden;
-  background-color: #ddeba5; }
+  background-color: #9FA2B2; }
 
 #wordChanger {
-  color: #008aaf; }
+  color: #b3d234; }
 
 #info {
   top: 50%; }
@@ -291,8 +292,15 @@ a {
   position: absolute;
   margin-top: 25%;
   right: 3%;
-  width: 690px; }
+  width: 720px; }
   #words span {
     font-size: 38px; }
+
+.arrow {
+  height: 33px;
+  width: 40px;
+  position: absolute;
+  left: -40px;
+  top: 3px; }
 
 /*# sourceMappingURL=style.css.map */
