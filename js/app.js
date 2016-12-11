@@ -2,8 +2,7 @@ var words = [
     'Front-end Developer',
     'Art Director',
     'Graphic Designer',
-    'Illustrator',
-    'Photographer'
+    'Artist'
   ],
   i = 0;
 
