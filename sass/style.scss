@@ -8,7 +8,7 @@
 
 #name{
 	position: absolute;
-	left: 15%;
+	left: 12%;
 	float: left;
 	color: white;
 	font-weight: $light;
@@ -34,18 +34,14 @@
 }
 
 #wordChanger {
-  color: $btgreen;
+  color: white;
 
 }
 #info {
 	top: 50%;
 }
 #words {
-	position: absolute;
-	// margin-left: 25%;
 	margin-top: 25%;
-	right: 3%;
-	width: 720px;
 	span {
 		font-size: 38px;
 	}
@@ -54,40 +50,42 @@
 .arrow{
 	height: 33px;
 	width: 40px;
-	position: absolute;
-	left: -40px;
-	top: 3px;
-	
+	top: -1px;	
 }
 #gradient{
 	width: 100%;
 	height: 100%;
 }
 
-.name{
-	color: white;
+#name{
+	color: $btgreen;
 	font-weight: $light;
 	font-size: 30px;
-	position: relative;
+	// position: relative;
 }
-.lname{
+#lname{
 	font-weight: $bold;
+	color: white !important;
 }
 span {
-	color: white;
+	color: $btgreen;
+	font-weight: $light;
 }
 .navbar{
 	height: 10%;
 }
 .nav {
-	margin-top: 15%;
-	
+	margin-left: -4%;
+	margin-top: 12%;
 }
 .navbar-default{
 	background-color: transparent;
 	border-color: transparent;
 }
 .navbar-default .navbar-nav > li > a {
-	font-size: 1em !important;
+	font-size: 1.25em !important;
 	color: white !important;
+}
+body{
+	background-color: blue;
 }
