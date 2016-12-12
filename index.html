@@ -5,61 +5,30 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-
+<body>
 <div id="container">
 	<div id='gradient'>
-	<header class="centered-navigation" role="banner">
-  <div class="centered-navigation-wrapper">
-    <a href="javascript:void(0)" class="mobile-logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
-    </a>
-    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
-    <nav role="navigation">
-      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
-        <li class="nav-link"><a href="javascript:void(0)">Products</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">About Us</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
-        <li class="nav-link logo">
-          <a href="javascript:void(0)" class="logo">
-            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
-          </a>
-        </li>
-        <li class="nav-link"><a href="javascript:void(0)">Testimonials</a></li>
-        <li id="js-centered-more" class="nav-link more"><a href="javascript:void(0)">More</a>
-          <ul class="submenu">
-            <li><a href="javascript:void(0)">Submenu Item</a></li>
-            <li><a href="javascript:void(0)">Another Item</a></li>
-            <li class="more"><a href="javascript:void(0)">Item with submenu</a>
-              <ul class="submenu fly-out-right">
-                <li><a href="javascript:void(0)">Sub-submenu Item</a></li>
-                <li><a href="javascript:void(0)">Another Item</a></li>
-              </ul>
-            </li>
-            <li class="more"><a href="javascript:void(0)">Another submenu</a>
-              <ul class="submenu fly-out-right">
-                <li><a href="javascript:void(0)">Sub-submenu</a></li>
-                <li><a href="javascript:void(0)">An Item</a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-        <li class="nav-link"><a href="javascript:void(0)">Sign up</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<body>
-		<div class="small-12 logo">
 
-			<img id="logo" src="images/logo.svg" alt="Alyson Burton Designs">
-			<div class="nav"><h1 class="name">ALYSON<span class="lname">BURTON</span></h1></div>
-
-		</div>
+	<nav class="navbar navbar-default">
+	    <div class="navbar-header navbar-right">
+	      <a class=""  href="#">
+	        <img id="logo" alt="Brand" src="images/logo.svg"> 
+	        <h1 id="name" class="navbar-text"> ALYSON <span class="lname">BURTON</span></h1>
+	      </a>
+	   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav ">
+	      	<li><a href="#">ABOUT</a></li>
+	      	<li><a href="#">WORK</a></li>
+	      	<li><a href="#">CONTACT</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>	
 		<div id="words">
 			<h2>
 			<img class="arrow" src="images/arrow.svg" alt="arrow">
 			
-				<span>NOT YOUR AVERAGE</span>
+				<span>Not your average</span>
 	  			<span id="wordChanger"></span>
 	  		</h2>
 		</div>
@@ -69,6 +38,7 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
+<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js" ></script>
 <script src="js/app.js"></script>
 <script src="js/be.js"> </script>
 <script src="js/script.js"></script>

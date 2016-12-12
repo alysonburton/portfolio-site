@@ -1,18 +1,26 @@
 
 @import 'global/variables';
 @import 'global/reset';
-@import '../bourbon/bourbon';
-@import '../neat/neat';
 @import 'global/mixins';
 @import 'global/col';
 @import 'global/typography';
-@import 'global/nav';
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 
+#name{
+	position: absolute;
+	left: 15%;
+	float: left;
+	color: white;
+	font-weight: $light;
+	margin-top: 4%;
+	font-size: 2em;
+}
 #logo{
 	width: 15%;
 	padding: 30px;
 	font-family: $work-sans;
 	position: fixed;
+	left: 10px;
 }
 #container{
 	width: 100%;
@@ -58,7 +66,6 @@
 
 .name{
 	color: white;
-	
 	font-weight: $light;
 	font-size: 30px;
 	position: relative;
@@ -68,4 +75,19 @@
 }
 span {
 	color: white;
+}
+.navbar{
+	height: 10%;
+}
+.nav {
+	margin-top: 15%;
+	
+}
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+	font-size: 1em !important;
+	color: white !important;
 }
