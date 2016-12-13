@@ -9,17 +9,17 @@ body {
   font-weight: 300 !important; }
 
 p {
-  font-family: "Work Sans", sans-serif;
+  font-family: Questrial, sans-serif;
   font-weight: 400;
   font-size: ms(0); }
 
 h1 {
-  font-family: "Work Sans", sans-serif;
+  font-family: Questrial, sans-serif;
   margin-top: ms(-3.5);
   margin-bottom: ms(-3.5); }
 
 h2 {
-  font-family: "Work Sans", sans-serif;
+  font-family: Questrial, sans-serif;
   margin-top: ms(-3.5);
   margin-bottom: ms(-3.5);
   font-weight: 300; }
@@ -61,11 +61,11 @@ a {
   font-size: 2em; }
 
 #logo {
-  width: 15%;
-  padding: 30px;
-  font-family: "Work Sans", sans-serif;
-  position: fixed;
-  left: 10px; }
+  font-family: Questrial;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  width: 50px; }
 
 #container {
   width: 100%;
@@ -97,25 +97,15 @@ a {
   width: 100%;
   height: 100%; }
 
-#name {
-  color: #b3d234;
-  font-weight: 300;
-  font-size: 30px; }
-
-#lname {
-  font-weight: 400;
-  color: white !important; }
-
 span {
-  color: #b3d234;
-  font-weight: 300; }
+  color: #b3d234; }
 
 .navbar {
   height: 10%; }
 
 .nav {
   margin-left: -4%;
-  margin-top: 12%; }
+  margin-top: 23px; }
 
 .navbar-default {
   background-color: transparent;
@@ -124,5 +114,24 @@ span {
 .navbar-default .navbar-nav > li > a {
   font-size: 1.25em !important;
   color: white !important; }
+
+#logo_name {
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top; }
+
+.navbar-default .navbar-header .navbar-brand {
+  color: white;
+  font-weight: 100 !important; }
+  .navbar-default .navbar-header .navbar-brand :hover {
+    color: #b3d234 !important; }
+
+@media (min-width: 768px) {
+  margin-top: 15px !important; }
+body {
+  background-color: black; }
+
+.navbar-default .nav > li > a, .navbar-default .nav > li > a:focus {
+  font-weight: 100; }
 
 /*# sourceMappingURL=style.css.map */

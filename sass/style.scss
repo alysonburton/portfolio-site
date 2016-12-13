@@ -14,11 +14,15 @@
 	font-size: 2em;
 }
 #logo{
-	width: 15%;
-	padding: 30px;
-	font-family: $work-sans;
-	position: fixed;
-	left: 10px;
+	// width: 15%;
+	// padding: 30px;
+	font-family: Questrial;
+	// position: fixed;
+	// left: 10px;
+	display: inline-block;
+  	vertical-align: top;
+  	height: 50px;
+ 	 width: 50px;
 }
 #container{
 	width: 100%;
@@ -54,27 +58,15 @@
 	width: 100%;
 	height: 100%;
 }
-
-#name{
-	color: $btgreen;
-	font-weight: $light;
-	font-size: 30px;
-	// position: relative;
-}
-#lname{
-	font-weight: $bold;
-	color: white !important;
-}
 span {
 	color: $btgreen;
-	font-weight: $light;
 }
 .navbar{
 	height: 10%;
 }
 .nav {
 	margin-left: -4%;
-	margin-top: 12%;
+	margin-top: 23px;
 }
 .navbar-default{
 	background-color: transparent;
@@ -83,5 +75,27 @@ span {
 .navbar-default .navbar-nav > li > a {
 	font-size: 1.25em !important;
 	color: white !important;
+}
+
+#logo_name {
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+.navbar-default .navbar-header .navbar-brand {
+	color: white;
+	font-weight: 100!important;
+	:hover{
+		color: $btgreen !important;
+	}
+}
+@media (min-width: 768px){
+	margin-top: 15px !important;
+}
+body{
+	background-color: black;
+}
+.navbar-default .nav>li>a, .navbar-default .nav>li>a:focus{
+	font-weight: 100;
 }
 

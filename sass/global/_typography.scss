@@ -7,28 +7,28 @@ $ms-ratio: 1.25;
 // Font Variables
 $light: 300;
 $bold: 400;
-$work-sans: 'Work Sans', sans-serif;
+$questrial: Questrial, sans-serif;
 $nixie-one: 'Nixie One', cursive;
 
 body{
 	-webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     font-family: Questrial !important;	
-    font-weight: 300 !important;
+    font-weight: $light !important;
 }
 // Styles
 p {
-  font-family: $work-sans;
+  font-family: $questrial;
   font-weight: 400;
   font-size: ms(0);
 }
 h1 {
-	font-family: $work-sans;
+	font-family: $questrial;
 	margin-top: ms(-3.5);
 	margin-bottom: ms(-3.5);
 }
 h2 {
-	font-family: $work-sans;
+	font-family: $questrial;
 	margin-top: ms(-3.5);
 	margin-bottom: ms(-3.5);
 	font-weight: $light;
