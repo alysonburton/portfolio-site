@@ -128,10 +128,34 @@ span {
 
 @media (min-width: 768px) {
   margin-top: 15px !important; }
+@media (min-width: 768px) {
+  .navbar-default.affix {
+    background-color: transparent; }
+
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: white !important; } }
 body {
   background-color: black; }
 
 .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus {
   font-weight: 100; }
+
+.about {
+  height: 800px;
+  top: 800px; }
+
+.triangle {
+  height: 800px;
+  width: 100%;
+  background: url(../img/triangle.svg) no-repeat right; }
+  @media (min-width: 768px) {
+    .triangle {
+      background: url(../img/big_triangle.svg) no-repeat right; } }
+  @media (max-width: 768px) {
+    .triangle {
+      background-position: fixed; } }
+
+a :hover {
+  color: #b3d234 !important; }
 
 /*# sourceMappingURL=style.css.map */
